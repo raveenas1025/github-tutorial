@@ -40,7 +40,10 @@ _by Raveena Suman_
  * When pushing your changes from your local repository to the cloud, a person should use the two commands *git add* and *git commit*.
   * *git add* is used everytime a person changes their code and wants those altered code to appear in the cloud. This starts up your first commit.
   * *git commit* is used after a person adds all files they have changed. This takes a final snapshot of the code, this shows that the person is satisfied with the code they have created and is ready to submit it to the cloud. When committing it will ask for a message, this is helpful for a person to keep track of what it is that they have started, changed and committed.
- * t
+ * Another important step is to set up your repository on your github account.
+  * To set up a repository on github, you would click on the +, which is near the top right corner, then click on "new repository" and when creating a new repo you must name it the exact name you have given the repo on your local. This allows for all the code pushed from your local to appear in the cloud, your code is then placed live and can visually see the commits made.
+ * git remote add origin URL, allows for the coder to connect their local repository to the repo that is on github, this is allows everyone else to see it. The *origin* part allows you to submit the URL once and any other time you would do *git push*, the server would know where the code will be pushed.
+
 
 
 ---
