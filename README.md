@@ -48,3 +48,9 @@ _by Raveena Suman_
 
 ---
 ## Workflow & Commands
+ * *git status* is an important command to use. It allows the coder to see all the actions that they've taken and see the files they have made and which still need to be added and committed.
+ * *git add* allows the coder to add all their modifications onto the stage.
+  * *git add .* allows you to add all files that have been changed.
+  * *git add "file name"* (not in quotes allows you to only add that file.
+ * *git commit* takes a snapshot of all new modifications.
+ * *git push* finally sends all the commits to github where you'll see all of the new changes to your project.
