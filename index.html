@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>GitHub Tutorial by raveenas1025</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>GitHub Tutorial</h1>
+          <h2>Commit early, commit often. A tip for version controlling - not for relationships</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/raveenas1025/github-tutorial/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/raveenas1025/github-tutorial/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/raveenas1025/github-tutorial" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Raveena Suman</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p><em>Git: is "verion control": so you can take snapshots of code and keep track of changes.</em><br>
+ <em>Github: Github allows you to store code in a cloud, visually keep track of changes and also collaborate on files easily.</em> </p>
+
+<ul>
+<li>
+<p>Similarites:</p>
+
+<ul>
+<li>runs on command line</li>
+<li>keeps track of changes</li>
+</ul>
+</li>
+<li>
+<p>Differences:</p>
+
+<ul>
+<li>Git does not require github.</li>
+<li> Github requires git, whereas git does not require github.</li>
+<li> Github stores code in the cloud, while git stores it in your local machine.</li>
+<li> Github allows you to visually track changes</li>
+<li> Git is "version control"; snapshots of code</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ul>
+<li>create an account on <a href="github.com">github.com</a> in order for all changes done in code to visually be shown and to collaborate on files.</li>
+<li>make sure to connect the <em>SSH key</em> in order to safely open accounts with a highly indecipherable password.</li>
+<li>when setting up git, you should set up your username and email.
+
+<ul>
+<li>to set up your username you will be asked to type <em>git config --global user.name "type your name"</em>.</li>
+<li>to set up your email you will be asked to type <em>git config --global user.email "type your email"</em>.</li>
+</ul>
+</li>
+<li>This will only be asked once when you use <em>--global</em> because then git will only use the information given  in that moment for all other commits.</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ul>
+<li>To start up your first repositiory, you would use <em>git init</em>. This starts up your first repositiory, git commands are not allowed unless a person would initialize their new empty repository.</li>
+<li>When pushing your changes from your local repository to the cloud, a person should use the two commands <em>git add</em> and <em>git commit</em> before using <em>git push</em>.
+
+<ul>
+<li>
+<em>git add</em> is used everytime a person changes their code and wants those altered code to appear in the cloud. This starts up your first commit.</li>
+<li>
+<em>git commit</em> is used after a person adds all files they have changed. This takes a final snapshot of the code, this shows that the person is satisfied with the code they have created and is ready to submit it to the cloud. When committing it will ask for a message, this is helpful for a person to keep track of what it is that they have started, changed and committed.</li>
+</ul>
+</li>
+<li>Another important step is to set up your repository on your github account.
+
+<ul>
+<li>To set up a repository on github, you would click on the +, then click on "new repository" and when creating a new repo you must name it the exact name you have given the repo on your local. This allows for all the code pushed from your local to appear in the cloud, your code is then placed live and you can visually see the commits made.</li>
+</ul>
+</li>
+<li>
+<em>git remote add origin URL</em>, allows for the coder to connect their local repository to the repo that is on github, this is allows everyone else to see it. The <em>origin</em> part allows you to submit the URL once and any other time you would do <em>git push</em>, the server would know where the code will be pushed.</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>
+<em>git status</em> is an important command to use. It allows the coder to see all the files they have made and which still need to be added and committed.</li>
+<li>
+<em>git add</em> allows the coder to add all their modifications onto the stage.
+
+<ul>
+<li>
+<em>git add .</em> allows you to add all files that have been changed.</li>
+<li>
+<em>git add "file name"</em> (not in quotes) allows you to only add only that file.</li>
+</ul>
+</li>
+<li>
+<em>git commit</em> takes a snapshot of all new modifications.</li>
+<li>
+<em>git push</em> finally sends all the commits to github where you'll see all of the new changes to your project.</li>
+</ul>
+        </section>
+
+        <footer>
+          GitHub Tutorial is maintained by <a href="https://github.com/raveenas1025">raveenas1025</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
